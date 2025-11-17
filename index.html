@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Acme Motorsport — Careers</title>
+    <!-- Use a condensed headline font to evoke team branding -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Acme Motorsport Careers — join the team behind the race performance." />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="team-badge" aria-hidden="true">AM</div>
+          <h1 class="logo">Acme F1 <span>Motorsport</span></h1>
+        </div>
+        <nav class="nav">
+          <a href="#jobs">Jobs</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-left">
+            <h2>Drive performance. Join our pit crew.</h2>
+            <p class="muted">We're hiring engineers, strategists and makers who thrive under pressure. Race-day focus, world-class engineering.</p>
+            <div class="hero-cta">
+              <a class="btn" href="#jobs">View Open Roles</a>
+              <a class="btn btn-outline" href="#about">Meet the Team</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="racing-graphic" aria-hidden="true">
+              <div class="stripe stripe-left"></div>
+              <div class="stripe stripe-right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="jobs" class="jobs-section container">
+        <div class="controls">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search by title, skill or company..."
+            aria-label="Search jobs"
+          />
+
+          <select id="filterDepartment" aria-label="Filter by department">
+            <option value="">All departments</option>
+          </select>
+
+          <select id="filterLocation" aria-label="Filter by location">
+            <option value="">All locations</option>
+          </select>
+
+          <select id="filterType" aria-label="Filter by type">
+            <option value="">All types</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Contract">Contract</option>
+            <option value="Internship">Internship</option>
+          </select>
+
+          <label class="checkbox">
+            <input id="remoteOnly" type="checkbox" /> Remote only
+          </label>
+        </div>
+
+        <div id="jobsList" class="jobs-list" aria-live="polite">
+          <!-- job cards inserted by JavaScript -->
+        </div>
+
+        <div id="noResults" class="no-results" hidden>
+          No jobs match your filters.
+        </div>
+      </section>
+
+      <!-- Apply Modal -->
+      <div id="applyModal" class="modal" aria-hidden="true">
+        <div
+          class="modal-content"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modalTitle"
+        >
+          <button id="modalClose" class="modal-close" aria-label="Close">
+            ×
+          </button>
+          <h3 id="modalTitle">Apply for role</h3>
+          <p id="modalJobSubtitle" class="muted"></p>
+
+          <form id="applyForm">
+            <input type="hidden" id="applyJobId" />
+            <label>
+              Your name
+              <input id="appName" type="text" required />
+            </label>
+            <label>
+              Email
+              <input id="appEmail" type="email" required />
+            </label>
+            <label>
+              Cover note
+              <textarea
+                id="appNote"
+                rows="4"
+                placeholder="Why do you want this role?"
+                required
+              ></textarea>
+            </label>
+            <label>
+              Resume (optional)
+              <input id="appResume" type="file" accept=".pdf,.doc,.docx" />
+            </label>
+
+            <div class="modal-actions">
+              <button type="submit" class="btn">Send application</button>
+              <button type="button" id="modalCancel" class="btn btn-outline">
+                Cancel
+              </button>
+            </div>
+          </form>
+
+          <div id="applySuccess" class="success-message" hidden>
+            <strong>Thanks — your application is saved.</strong>
+            <p>
+              We simulate submission for this static demo. Your application is
+              stored in your browser only.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="container about">
+        <h3>About Acme</h3>
+        <p>
+          At Acme we design delightful products and ship them to millions of
+          customers. We value curiosity, compassion, and craftsmanship.
+        </p>
+        <p>
+          Our motorsport team blends cutting-edge engineering with a relentless
+          focus on performance — from the workshop to the pit lane. We provide
+          world-class facilities, close collaboration between design and
+          engineering, and opportunities to work on high-pressure events that
+          shape careers. If you thrive on fast feedback cycles, hands-on problem
+          solving, and being part of a tight-knit crew, you'll feel at home here.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© Acme Careers — We’re hiring.</small>
+        <nav class="footer-nav">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+  </body>
+</html>

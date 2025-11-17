@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "title": "Senior Frontend Engineer",
+    "company": "Acme Labs",
+    "location": "Nairobi, Kenya",
+    "type": "Full-time",
+    "department": "Engineering",
+    "remote": true,
+    "salary": "USD 60k-80k",
+    "description": "Build and ship web UIs with React, TypeScript and a focus on performance.",
+    "posted_date": "2025-11-01"
+  },
+  {
+    "id": "2",
+    "title": "Product Designer",
+    "company": "Acme Labs",
+    "location": "Remote",
+    "type": "Full-time",
+    "department": "Design",
+    "remote": true,
+    "salary": "USD 50k-70k",
+    "description": "Design delightful user experiences and prototypes; collaborate closely with product and engineering.",
+    "posted_date": "2025-10-28"
+  },
+  {
+    "id": "3",
+    "title": "Data Engineer",
+    "company": "Acme Analytics",
+    "location": "Kisumu, Kenya",
+    "type": "Contract",
+    "department": "Data",
+    "remote": false,
+    "salary": "USD 40k-60k",
+    "description": "Design ETL pipelines and maintain data infrastructure for analytics and ML workloads.",
+    "posted_date": "2025-11-03"
+  },
+  {
+    "id": "4",
+    "title": "Customer Success Manager",
+    "company": "Acme Support",
+    "location": "Nairobi, Kenya",
+    "type": "Full-time",
+    "department": "Operations",
+    "remote": false,
+    "salary": "USD 28k-40k",
+    "description": "Onboard and support enterprise customers, ensuring their success and retention.",
+    "posted_date": "2025-10-24"
+  },
+  {
+    "id": "5",
+    "title": "QA Engineer (Internship)",
+    "company": "Acme Labs",
+    "location": "Remote",
+    "type": "Internship",
+    "department": "Engineering",
+    "remote": true,
+    "salary": "Stipend",
+    "description": "Work with engineers to create test suites, automate regression and help improve quality.",
+    "posted_date": "2025-11-10"
+  },
+  {
+    "id": "6",
+    "title": "Marketing Lead",
+    "company": "Acme Growth",
+    "location": "Mombasa, Kenya",
+    "type": "Part-time",
+    "department": "Marketing",
+    "remote": false,
+    "salary": "USD 30k-45k",
+    "description": "Lead demand generation campaigns and content strategy for regional markets.",
+    "posted_date": "2025-11-05"
+  }
+]
