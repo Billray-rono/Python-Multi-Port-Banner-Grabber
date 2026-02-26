@@ -1,24 +1,23 @@
-# Acme Careers — Static Job Advertising Demo
+# Chat Server and Clients
 
-This is a simple static website that advertises jobs and provides an interactive UI to search/filter and apply. It is intentionally a client-side demo (no backend). Applications are stored locally in the browser's localStorage to simulate submission.
+Quick instructions to run the chat server and clients locally (Windows PowerShell).
 
-How to use
+1. Start the chat server (Chat Server folder):
 
-- Open `index.html` in your browser (double-click or open with Live Server)
-- Browse roles, use the search box and filters.
-- Click "Apply" to open the apply modal. Submissions are saved to localStorage under the key `acme_applications_v1`.
+```powershell
+python "c:\Users\Administrator\Desktop\cybersec py\Chat Server\server.py"
+```
 
-Files added/updated
+2. In a second terminal run any client (they now auto-send a username):
 
-- `index.html` — main page and layout
-- `index.css` — styles
-- `scripts.js` — client-side logic (fetches `jobs.json`, filters, opens modal, stores applications)
-- `jobs.json` — sample job postings
-- `README.md` — this file
+```powershell
+python "c:\Users\Administrator\Desktop\cybersec py\Chat Server\client1.py"
+python "c:\Users\Administrator\Desktop\cybersec py\Chat Server\client2.py"
+python "c:\Users\Administrator\Desktop\cybersec py\Chat Server\client3.py"
+```
 
-Notes & next steps
+3. The top-level `client.py` connects to a different server IP (`169.254.1.17:12345`). To use it with this chat server, change its `host` and `port` to `127.0.0.1` and `5000`.
 
-- This is a static demo. To make real applications work, implement a server endpoint to accept file uploads and application payloads.
-- You can extend features: pagination, sort, company pages, login, or integrate with an ATS.
-
-Enjoy! Open `index.html` to try the site.
+4. Notes:
+- Start the server before running clients.
+- If a client appears to hang, check that the server is running and listening on `127.0.0.1:5000`.
