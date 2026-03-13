@@ -1,1 +1,0 @@
-Name = input("Enter your name: ")
